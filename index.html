@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<title>S.W.Blog</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="TheQuest Gaming Magazine Template">
 	<meta name="keywords" content="gaming, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link href="img/favicon.ico" rel="shortcut icon"/>
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+	<link href="img/favicon.ico" rel="shortcut icon" />
 
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/magnific-popup.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+		rel="stylesheet">
 
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/slicknav.min.css" />
+
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script>
+		onload = () =>{
+			$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+
+				var target = $(this.hash);
+
+				if (target.length) {
+					$('html, body').animate({ scrollTop: target.offset().top }, 1000);
+					return false;
+				}
+
+			});
+		});
+		}
+	</script>
 
 </head>
+
 <body>
 	<header class="header-section">
 		<a href="index.html" class="site-logo">
 			<img src="img/logo.png" alt="logo">
 		</a>
-		<ul class="main-menu pr-5">
+		<ul class="main-menu">
 			<li><a href="index.html">Home</a></li>
-			<li><a href="characters.html">Sobre nós</a></li>
-			<li><a href="game.html">Vídeo</a></li>
-			<li><a href="game.html">Plataforma</a></li>
+			<li><a href="#about" class="nav-link js-scroll-trigger">Sobre nós</a></li>
+			<li><a href="#vid" class="nav-link js-scroll-trigger">Vídeo</a></li>
+			<li><a href="#plat" class="nav-link js-scroll-trigger">Plataforma</a></li>
 		</ul>
 	</header>
 	<section class="hero-section">
@@ -40,13 +60,14 @@
 					<div class="row">
 						<div class="col-lg-10 offset-lg-1">
 							<h2>Nosso jogo</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
-							<a href="#" class="site-btn">Jogue no Scratch</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+								ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+							<a href="https://scratch.mit.edu/projects/390970761/" target="_blank" class="site-btn">Jogue no Scratch</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><a id="about" class="js-scroll-trigger"></a>
 	</section>
 
 	<section class="blog-section spad">
@@ -56,7 +77,19 @@
 					<div class="blog-post featured-post">
 						<img src="img/blog/princiapal.svg" alt="">
 						<h3>Science War</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Fusce urna quam, euismod sit amet mollis quis, vestibulum quis velit. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu porttitor aliquet vitae at dui. </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+							viverra maecenas accumsan lacus vel facilisis. Fusce urna quam, euismod sit amet mollis
+							quis, vestibulum quis velit. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu
+							porttitor aliquet vitae at dui. 
+						</p>
+						<h3>Vídeo</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+							viverra maecenas accumsan lacus vel facilisis. Fusce urna quam, euismod sit amet mollis
+							quis, vestibulum quis velit. Morbi id dictum quam, ut commodo lorem. In at nisi nec arcu
+							porttitor aliquet vitae at dui. 
+						</p>
 					</div>
 				</div>
 				<div class="col-lg-4 sidebar">
@@ -67,29 +100,29 @@
 							<div class="ln-item">
 								<img src="img/blog-thumbs/1.jpg" alt="">
 								<div class="ln-text"><br>
-									<h6>Blog da Camila</h6>
+									<a href="https://miojolu.tumblr.com/#contact" target="_blank" class="nav-link js-scroll-trigger pl-0"><h6>Blog da Camila</h6></a>
 									<div class="ln-metas">
-										<div class="ln-meta">Camila....</div>
+										<div class="ln-meta">Camila Melo Ferreira</div>
 									</div>
 								</div>
 							</div>
 							<div class="ln-item">
-								<img src="img/blog-thumbs/2.jpg" alt="">
+								<img src="img/blog-thumbs/luiza.jpg" alt="">
 								<div class="ln-text">
 									<br>
-									<h6>Blog da Luiza</h6>
+									<a href="https://miojolu.tumblr.com/#contact" target="_blank" class="nav-link js-scroll-trigger pl-0"><h6>Blog da Luiza</h6></a>
 									<div class="ln-metas">
-										<div class="ln-meta">Luiza....</div>
+										<div class="ln-meta">Luiza Ribeiro Parente Silva</div>
 									</div>
 								</div>
 							</div>
 							<div class="ln-item">
-								<img src="img/blog-thumbs/3.jpg" alt="">
+								<img src="img/blog-thumbs/eu.jpg" alt="">
 								<div class="ln-text">
 									<br>
-									<h6>Blog da Raissa</h6>
+									<a href="https://rakookie.tumblr.com/" target="_blank" class="nav-link js-scroll-trigger pl-0"><h6>Blog da Raíssa</h6></a>
 									<div class="ln-metas">
-										<div class="ln-meta">Raíssa.....</div>
+										<div class="ln-meta">Raíssa Gonçalves Lopes Carvalho</div>
 									</div>
 								</div>
 							</div>
@@ -97,23 +130,68 @@
 					</div>
 					<div class="sb-widget">
 						<h2 class="sb-title mb-1">Currículo</h2>
-						<h6 class="text-secondary mb-2">Nosso currículo Lattes</h6>
+						<h6 class="text-secondary mb-0">Nosso currículo Lattes</h6>
 						<div class="latest-news-widget">
 							<div class="ln-item mb-1">
 								<div class="ln-text"><br>
-									<h6>Camila</h6>
+									<a href="#plat" class="nav-link js-scroll-trigger pl-0" target="_blank"><h6>Camila Melo</h6></a>
 								</div>
 							</div>
 							<div class="ln-item mb-1">
 								<div class="ln-text">
 									<br>
-									<h6>Luiza</h6>
+									<a href="https://miojolu.tumblr.com/#contact" target="_blank" class="nav-link js-scroll-trigger pl-0"><h6>Luiza Silva</h6></a>
 								</div>
 							</div>
-								<div class="ln-text mb-1">
-									<br>
-									<h6>Raissa</h6>
-
+							<div class="ln-text mb-1">
+								<br>
+								<a href="http://lattes.cnpq.br/4252817742927675" target="_blank" class="nav-link js-scroll-trigger pl-0"><h6>Raíssa Lopes</h6></a>
+							</div>
+						</div>
+					</div>
+					<div class="sb-widget">
+						<h2 class="sb-title mb-4">Personagens</h2>
+						<div class="latest-comments-widget">
+							<div class="lc-item">
+								<img src="img/author-thumbs/1.jpg" alt="">
+								<div class="lc-text">
+									<h6>Albert Einstein</h6>
+									<div class="lc-date">oq ele é</div>
+								</div>
+							</div>
+							<div class="lc-item">
+								<img src="img/author-thumbs/2.jpg" alt="">
+								<div class="lc-text">
+									<h6>Michael James</h6>
+									<div class="lc-date">April 1,2019</div>
+								</div>
+							</div>
+							<div class="lc-item">
+								<img src="img/author-thumbs/3.jpg" alt="">
+								<div class="lc-text">
+									<h6>Jane Smith</h6>
+									<div class="lc-date">April 1,2019</div>
+								</div>
+							</div>
+							<div class="lc-item">
+								<img src="img/author-thumbs/4.jpg" alt="">
+								<div class="lc-text">
+									<h6>Michael James</h6>
+									<div class="lc-date">April 1,2019</div>
+								</div>
+							</div>
+							<div class="lc-item">
+								<img src="img/author-thumbs/1.jpg" alt="">
+								<div class="lc-text">
+									<h6>Jane Smith</h6>
+									<div class="lc-date">April 1,2019</div>
+								</div>
+							</div>
+							<div class="lc-item">
+								<img src="img/author-thumbs/1.jpg" alt="">
+								<div class="lc-text">
+									<h6>Jane Smith</h6>
+									<div class="lc-date">April 1,2019</div>
 								</div>
 							</div>
 						</div>
@@ -121,22 +199,23 @@
 				</div>
 			</div>
 		</div>
+		</div>
 	</section>
 	<!-- Blog section end -->
 
-	
+
 
 	<!-- Video section -->
-	<div class="video-section">
+	<div class="video-section"><a id="plat"></a>
 		<div class="container">
 			<div class="video-logo">
 				<h2>Plataforma</h2>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, minima eos debitis, tenetur accusantium quisquam sed exercitationem autem aperiam adipisci ab eaque vitae accusamus, laborum enim pariatur minus. Quibusdam, odit?</p>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, minima eos debitis, tenetur
+					accusantium quisquam sed exercitationem autem aperiam adipisci ab eaque vitae accusamus, laborum
+					enim pariatur minus. Quibusdam, odit?</p>
 			</div>
-			<div class="video-popup-warp">
-				<img src="img/video-bg.jpg" alt="">
-				<a href="https://www.youtube.com/watch?v=xzCEdSKMkdU" class="video-play"><i class="fa fa-play"></i></a>
-			</div>
+			<br><iframe class="scratch" src="https://scratch.mit.edu/projects/390970761/embed" allowtransparency="true" width="685"         height="602" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <br>
 		</div>
 	</div>
 	<!-- Video section end -->
@@ -146,7 +225,7 @@
 		<div class="copyright"> All rights reserved</div>
 	</div>
 	<!-- Footer section end -->
-															
+
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -156,5 +235,6 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
