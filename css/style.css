@@ -222,7 +222,7 @@ Header section
  ---------------------*/
 
 .header-section {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -233,19 +233,28 @@ Header section
 .site-logo {
 	display: inline-block;
 	padding: 21px 55px 20px;
-	background: #222222;
+	margin-right: 500px;
 }
-
+.aua{
+	color: white !important;
+}
+.vermelho{
+	color: red !important;
+}
+.amarelo{
+	color: yellow !important;
+}
 .main-menu {
-	display: inline-block;
+	display: inline;
 	padding-left: 44px;
-	position: relative;
 	z-index: 99;
 	background: #353535;
+	justify-content: end;
 }
 
 .main-menu li {
 	display: inline-block;
+
 }
 
 .main-menu li a {
