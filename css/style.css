@@ -133,7 +133,7 @@ Commom elements
 	padding: 21px 47px;
 	border-radius: 50px;
 	text-transform: uppercase;
-	background: #10ddb4;
+	background: #ffee00;
 	color: #161616;
 	line-height: 1;
 	cursor: pointer;
@@ -265,7 +265,7 @@ Header section
 	height: 3px;
 	left: 0;
 	bottom: 0;
-	background: #10ddb4;
+	background: #ff0000;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
@@ -379,7 +379,7 @@ Header section
 
 .slider-progress-bar .progress {
 	height: 4px;
-	background: #10ddb4;
+	background: #ff0000;
 	-webkit-animation: sliderProgressBar ease;
 	animation: sliderProgressBar ease;
 }
