@@ -233,14 +233,16 @@ Header section
 .site-logo {
 	display: inline-block;
 	padding: 21px 55px 20px;
-	margin-right: 200px;
-	margin-left: 100px;
+
 }
 .aua{
 	color: white !important;
 }
 .vermelho{
 	color: red !important;
+}
+.branco{
+	color: white !important;
 }
 .vermelhao{
 	color: rgb(212, 23, 23) !important;

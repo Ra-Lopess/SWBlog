@@ -44,17 +44,30 @@
 </head>
 
 <body>
-	<header class="header-section">
+	<nav class="navbar navbar-expand-lg navbar-light header-section  py-3" id="mainNav">
+	<div class="container">
 		<a href="index.html" class="site-logo">
 			<h2 class="aua"><span class="vermelho">S</span>cience <span class="amarelo">W</span>ar Blog</h2>
 		</a>
-		<ul class="main-menu">
-			<li><a href="#home"><i class="fas fa-home pr-2 "></i>Home</a></li>
-			<li><a href="#about" class="nav-link js-scroll-trigger"><i class="fas fa-users pr-2"></i>Sobre nós</a></li>
-			<li><a href="#vid" class="nav-link js-scroll-trigger"><i class="fas fa-play pr-2"></i>Vídeo</a></li>
-			<li><a href="#plat" class="nav-link js-scroll-trigger"><i class="fas fa-gamepad pr-2"></i>Plataforma</a></li>
-		</ul>
-	</header>
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav my-2 my-lg-0 main-menu">
+				<li class="nav-item">
+					<a href="#home"><i class="fas fa-home pr-2 "></i>Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#about" class="nav-link js-scroll-trigger branco"><i class="fas fa-users pr-2"></i>Sobre nós</a>
+				</li>
+				<li class="nav-item">
+					<a href="#vid" class="nav-link js-scroll-trigger branco"><i class="fas fa-play pr-2"></i>Vídeo</a></li>
+				<li class="nav-item">
+					<a href="#plat" class="nav-link js-scroll-trigger branco"><i class="fas fa-gamepad pr-2"></i>Plataforma</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</nav>
 	<section class="hero-section"><a id="home"></a>
 		<div class="hero-slider owl-carousel">
 			<div class="hero-item set-bg" data-setbg="img/blog/treme.png">
