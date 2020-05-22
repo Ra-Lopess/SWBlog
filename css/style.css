@@ -241,6 +241,10 @@ Header section
 .vermelho{
 	color: red !important;
 }
+.vermelhao{
+	color: rgb(212, 23, 23) !important;
+}
+
 .amarelo{
 	color: yellow !important;
 }
