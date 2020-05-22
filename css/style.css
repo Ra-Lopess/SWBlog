@@ -233,7 +233,8 @@ Header section
 .site-logo {
 	display: inline-block;
 	padding: 21px 55px 20px;
-	margin-right: 400px;
+	margin-right: 200px;
+	margin-left: 100px;
 }
 .aua{
 	color: white !important;
