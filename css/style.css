@@ -264,6 +264,12 @@ Header section
 
 }
 
+.opi{
+	font-size: smaller;
+	justify-content: center;
+	color: rgb(173, 27, 27) !important;
+}
+
 .main-menu li a {
 	position: relative;
 	display: block;
